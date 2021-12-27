@@ -52,7 +52,7 @@
                             ],
                             [
                                 'title' => 'Bugs Squashed',
-                                'value' => '797%',
+                                'value' => '77%',
                                 'bg' => 'bg-info-400',
                                 'width' => '77%',
                                 'valuenow' => '77',
