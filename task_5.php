@@ -17,6 +17,11 @@
         <link rel="stylesheet" media="screen, print" href="css/fa-brands.css">
         <link rel="stylesheet" media="screen, print" href="css/fa-regular.css">
     </head>
+    <style>
+        .ban{
+            opacity: 0.5;
+        }
+    </style>
     <body class="mod-bg-1 mod-nav-link ">
         <main id="js-page-content" role="main" class="page-content">
             <div class="col-md-6">
@@ -39,7 +44,8 @@
                             'user-position' => 'Vyvozit ves` proect na sebe',
                             'user-twitter-link' => 'https://twitter.com/@myplaneticket',
                             'user-twitter-nick' => '@myplaneticket',
-                            'user-mail' => 'https://wrapbootstrap.com/user/myorange'
+                            'user-mail' => 'https://wrapbootstrap.com/user/myorange',
+                            'ban' => false
                         ],
                         [
                             'user-photo' => 'img/demo/authors/josh.png',
@@ -48,7 +54,8 @@
                             'user-position' => 'Partner &amp; Contributor',
                             'user-twitter-link' => 'https://twitter.com/@myplaneticket',
                             'user-twitter-nick' => '@myplaneticket',
-                            'user-mail' => 'https://wrapbootstrap.com/user/myorange'
+                            'user-mail' => 'https://wrapbootstrap.com/user/myorange',
+                            'ban' => false
                         ],
                         [
                             'user-photo' => 'img/demo/authors/jovanni.png',
@@ -57,7 +64,8 @@
                             'user-position' => 'Malchik dlya bit`ya',
                             'user-twitter-link' => 'https://twitter.com/@myplaneticket',
                             'user-twitter-nick' => '@myplaneticket',
-                            'user-mail' => 'https://wrapbootstrap.com/user/myorange'
+                            'user-mail' => 'https://wrapbootstrap.com/user/myorange',
+                            'ban' => true
                         ],
                         [
                             'user-photo' => 'img/demo/authors/roberto.png',
@@ -66,7 +74,8 @@
                             'user-position' => 'Minecraft gamer',
                             'user-twitter-link' => 'https://twitter.com/@myplaneticket',
                             'user-twitter-nick' => '@myplaneticket',
-                            'user-mail' => 'https://wrapbootstrap.com/user/myorange'
+                            'user-mail' => 'https://wrapbootstrap.com/user/myorange',
+                            'ban' => true
                         ]
                     ]
                     ?>
@@ -74,7 +83,7 @@
                         <div class="panel-content">
                            <div class="d-flex flex-wrap demo demo-h-spacing mt-3 mb-3">
                                <?php foreach($items_data as $item):?>
-                            <div class="rounded-pill bg-white shadow-sm p-2 border-faded mr-3 d-flex flex-row align-items-center justify-content-center flex-shrink-0">
+                            <div class="rounded-pill bg-white shadow-sm p-2 border-faded mr-3 d-flex flex-row align-items-center justify-content-center flex-shrink-0 <?php if($item['ban']): ?>ban <?php endif;?>">
                                 <img src="<?php echo $item['user-photo'];?>" alt="<?php echo $item['user-name'];?>" class="img-thumbnail img-responsive rounded-circle" style="width:5rem; height: 5rem;">
                                 <div class="ml-2 mr-3">
                                     <h5 class="m-0">
